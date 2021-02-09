@@ -1,24 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import { Layout,Menu } from 'antd';
+import KanbanBoard from './components/KanbanBoard';
 
 function App() {
+
+  const { Header, Content, Footer } = Layout;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <div className="App">
+    //   <div className="Header">This is Header</div>
+      
+    //   <KanbanBoard />
+    // </div>
+
+    <Layout className="layout">
+    <Header>
+      <Menu theme="dark" mode="horizontal">
+        <Menu.Item key="1">Kanban Board</Menu.Item>
+      </Menu>
+        this is header
+    </Header>
+    <Content style={{ padding: '50px' }}>
+      <KanbanBoard />
+    </Content>
+    <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+  </Layout>
   );
 }
 
