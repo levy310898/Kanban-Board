@@ -12,17 +12,14 @@ function App() {
     //   <KanbanBoard />
     // </div>
 
-    <Layout className="layout">
+    <Layout className="layout" style = {{height:'100vh'}}>
     <Header>
-      <Menu theme="dark" mode="horizontal">
-        <Menu.Item key="1">Kanban Board</Menu.Item>
-      </Menu>
-        this is header
+      This is Kanban Board
     </Header>
-    <Content style={{ padding: '50px' }}>
+    <Content className = "kanbanBoard">
       <KanbanBoard />
     </Content>
-    <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+    <Footer style={{ textAlign: 'center' }}>Kanban board ©2021 Created by Lê Hồ Vỹ</Footer>
   </Layout>
   );
 }

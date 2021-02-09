@@ -6,5 +6,29 @@
 }
 
 .trelloBox{
-  border:1px solid red;
+}
+
+
+.kanbanBoard{
+  width: 1200px;
+  padding-top: 50px;
+  margin:0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .kanbanBoard {
+    width: 992px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .kanbanBoard {
+    width: 767px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .kanbanBoard {
+    width: 100%;
+  }
 }
